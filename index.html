@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Racing Club Events & Tickets</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
   <!-- Normalize CSS -->
   <link rel="stylesheet" href="/css/normalize.css">
   <!-- Main CSS -->
@@ -33,22 +33,26 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
+  <!-- Face -->
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="DI667ybx"></script>
 <!-- Header -->
-<header>
-  <ul>
-    <li><a href=""></a>Upcoming Events</li>
-    <li><a href=""></a>Past Events</li>
-    <li><a href=""></a>FAQ</li>
-    <li><a href=""></a>About Us</li>
-    <li><a href=""></a>Blog</li>
-    <li><a href=""></a>Contact</li>
-    
+<header class="header">
+  <a href="#" class="logo"><img src="/img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x"></a>
+  <ul class="main-nav">
+    <li><a href="upcoming.html">Upcoming Events</a></li>
+    <li><a href="past.html">Past Events</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
-</header>
+  <ul class="right-nav">
+    <li><a href="login.html">Login</a> </li>
+    <div class="fb-like" data-href="https://www.facebook.com/motobikebcj" data-width="" data-layout="" data-action="" data-size="" data-share="false"></div></header>
+
+
   <script src="js/app.js"></script>
-
 </body>
-
 </html>
