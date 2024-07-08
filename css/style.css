@@ -120,6 +120,8 @@ header .right-nav li a {
   color: #bf0000;
   cursor: pointer;
 }
+/* End of Hero Section */
+/* BLOG Section */
 
 #blog h2 {
   font-family: 'built_titling', Helvetica, sans-serif;
@@ -149,6 +151,12 @@ header .right-nav li a {
   color: #9A9A9A;
   margin-top: 1.2rem;
 }
+.blog-post h3 {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  letter-spacing: -0.4px;
+  line-height: 1.4;  
+}
 
 .blog-post .blog-post-desc {
   font-size: 1rem;
@@ -166,3 +174,124 @@ header .right-nav li a {
   text-decoration:underline;
 }
 
+.blog-show-more {
+  text-align: center;
+}
+
+#blog {
+  margin-bottom: 50px;
+}
+
+/* End of Blog Section */
+/* About Section */
+
+#about-us {
+  width: 100%;
+  background-image: url(../img/about-us-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  color: white;
+
+}
+
+#about-us .container {
+  display: flex;
+  align-items: top;
+}
+
+.about-us-title {
+  width: 50%;
+}
+
+.about-us-desc {
+  width: 50%;
+}
+
+.about-us-title h3 {
+  font-family: 'built_titling', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin: 0;
+} 
+
+.about-us-title h3::after {
+  content: "";
+  display: block;
+  background: #BF0000;
+  width: 90px;
+  height: 0.1rem;
+  margin-top: 2rem;
+}
+
+.about-us-desc h4 {
+  font-family: 'built_titling', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1;
+  margin: 0;
+}
+
+/* END OF ABOUT US SECTION */
+/* START OF PARTNER SECTION */
+#partners {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+  margin: 0 auto;
+}
+
+.partners-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.partners-container h2 {
+  font-family: 'built_titling', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.partners-inner {
+  display: flex;
+  margin: 30px 0px;
+}
+
+.partners-inner .partner {
+  width: 50%;
+}
+
+/* END OF PARTNER SECTION */
+/* START OF FOOTER SECTION */
+footer {
+  background: black;
+  color: white;
+}
+
+footer .container {
+  display: flex;
+  height: 120px;
+}
+
+footer .logo {
+    padding-top: 20px;
+  }
+
+footer .main-nav li, footer .right-nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+footer .main-nav li a, footer .right-nav li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'built_titling', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding: 0px 15px;
+}
+/* END OF FOOTER SECTION */
