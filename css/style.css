@@ -61,6 +61,12 @@ header {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.50) 50%);
   position: absolute;
 }
+header.sticky {
+ position: fixed;
+ top: 0;
+ background-color: #212121;
+ background-image: none;
+}
 
 header .logo {
   float: left;
@@ -91,6 +97,10 @@ header .main-nav li a, header .right-nav li a {
   font-size: 20px;
   letter-spacing: 4px;
   padding: 0px 15px;
+}
+
+.main-nav li a:hover {
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .hamburger-menu {
@@ -126,6 +136,12 @@ header .main-nav li a, header .right-nav li a {
   }
 }
 
+/* Stilovi za vece mobilne  */
+@media only screen and (max-width: 768px) {
+  .hero-text .hero-title {
+    font-size: 90px;
+  }
+}
 
 #hero {
   width: 100%;
@@ -182,6 +198,15 @@ header .main-nav li a, header .right-nav li a {
   padding: 12px 22px;
   border: none;
   outline: none;
+  transition: 0.4s ease all;
+}
+
+.btn-primary:hover {
+  background: #a3171b;
+}
+
+.btn-primary:active {
+  box-shadow: inset 0px 8px 4px rgba(0,0,0,0.25);
 }
 
 /* END HERO SECTION */

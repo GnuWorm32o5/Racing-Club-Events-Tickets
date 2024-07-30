@@ -8,3 +8,11 @@ $(document).ready(function(){
         }
     });
 });
+
+$(`#blog`).waypoint(function(direction){
+    if (direction == 'down') {
+        $(`header`).addClass('sticky');
+    } else {
+        $(`header`).removeClass('sticky');
+    }
+});
