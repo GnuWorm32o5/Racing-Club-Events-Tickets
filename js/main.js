@@ -1,18 +1,11 @@
 $(document).ready(function(){
-    $('.hamburger-menu').click(function(event){
-        event.stopPropagation();
-        if ($('main').hasClass('active')) {
-            $('main').removeClass('active');
+// Sticky Nav
+    $('#blog').waypoint(function(direction){
+        if (direction == 'down') {
+            $('header').addClass('sticky');
         } else {
-            $('main').addClass('active');
+            $('header').removeClass('sticky');
         }
     });
-});
 
-$(`#blog`).waypoint(function(direction){
-    if (direction == 'down') {
-        $(`header`).addClass('sticky');
-    } else {
-        $(`header`).removeClass('sticky');
-    }
 });
